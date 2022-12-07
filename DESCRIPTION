@@ -1,0 +1,32 @@
+Package: demopkg
+Date: 2022-10-05
+Title: Coding Club Demo Package
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Zhenya", 
+           family = "Kalenkovich", 
+           email = "e.kalenkovich@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Zheasnya", 
+           family = "Kalenkovich", 
+           email = "e.kalenkovich@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A demo for Coding Club 2022.
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    glue
+Suggests: 
+    dplyr,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3

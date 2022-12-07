@@ -1,0 +1,31 @@
+---
+title: "Dempopkg Overview"
+output:
+  rmarkdown::html_vignette:
+    df_print: "kable"
+vignette: >
+  %\VignetteIndexEntry{Dempopkg Overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=FALSE}
+library(demopkg)
+library(dplyr)
+```
+
+```{r, echo = FALSE}
+self_res_att |>
+  group_by(sex, ethgroup) |>
+  summarise(n = n(),
+            mean_age = mean(age) |> round(1),
+            sd_age = sd(age) |> round(2),
+            .groups = "drop")
+```
