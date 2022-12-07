@@ -15,7 +15,7 @@ The goal of demopkg is to learn making packages.
 
 ## Installation
 
-You can install the development version of demopkg like so:
+Don’t install the development version of demopkg like so:
 
 ``` r
 remotes::install_github("kalenkovich/demopkg")
